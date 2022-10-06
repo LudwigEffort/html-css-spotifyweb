@@ -4,29 +4,65 @@
     box-sizing: border-box;
 }
 
+:root   {
+    --height-playbar: 100px;
+    --height-top_banner: 100px;
+    --width-sidebar: 200px;
+}
+
 /* Main */
 
-.main_container {
+main    {
+    margin-bottom: 100px;
+}
+
+.general_container {
     display: flex;
 }
 
 .sidebar_container  {
-    background-color: red;
-    flex: 1 1 10%;
+    background-color: #000000;
+    flex: 0 0 var(--width-sidebar);
+
+    z-index: 20;
 }
 
 .playlist_container {
-    background-color: pink;
-    flex: 1 1 90%;
+    background-color: #141922;
+    color: white;
+    padding-top: var(--height-top_banner);
+    height: calc(100vh - var(--height-playbar));
+
+    flex: 1 0 0;
+    overflow-y: auto;
+}
+
+.top_banner_container   {
+    background-color: black;
+    opacity: 40%;
+    position: fixed;
+    height: var(--height-top_banner);
+
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .playbar_container  {
-    background-color: aquamarine;
+    background-color: #282828;
     position:fixed;
-    height: 200px;
+    height: var(--height-playbar);
 
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 99;
+}
+
+@media all and (max-width: 430px) {
+
+    :root   {
+        --width-sidebar: 50px;
+    }
+
 }
