@@ -6,8 +6,12 @@
 
 :root   {
     --height-playbar: 100px;
-    --height-top_banner: 100px;
+    --height-top_banner: 90px;
     --width-sidebar: 200px;
+}
+
+body    {
+    color: white;
 }
 
 /* Main */
@@ -29,7 +33,6 @@ main    {
 
 .playlist_container {
     background-color: #141922;
-    color: white;
     padding-top: var(--height-top_banner);
     height: calc(100vh - var(--height-playbar));
 
@@ -43,10 +46,25 @@ main    {
     position: fixed;
     height: var(--height-top_banner);
 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
     top: 0;
     left: 0;
     right: 0;
 }
+
+.top_banner_container span {
+    display: block;
+    margin-right: 4rem;
+    padding: 0.5rem 2rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 2rem;
+}
+
 
 .playbar_container  {
     background-color: #282828;
