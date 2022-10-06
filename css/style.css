@@ -7,11 +7,11 @@
 :root   {
     --height-playbar: 100px;
     --height-top_banner: 90px;
-    --width-sidebar: 200px;
+    --width-sidebar: 250px;
 }
 
 body    {
-    color: white;
+    color: grey;
 }
 
 /* Main */
@@ -24,21 +24,7 @@ main    {
     display: flex;
 }
 
-.sidebar_container  {
-    background-color: #000000;
-    flex: 0 0 var(--width-sidebar);
-
-    z-index: 20;
-}
-
-.playlist_container {
-    background-color: #141922;
-    padding-top: var(--height-top_banner);
-    height: calc(100vh - var(--height-playbar));
-
-    flex: 1 0 0;
-    overflow-y: auto;
-}
+/* Banner */
 
 .top_banner_container   {
     background-color: black;
@@ -56,6 +42,7 @@ main    {
 }
 
 .top_banner_container span {
+    color: white;
     display: block;
     margin-right: 4rem;
     padding: 0.5rem 2rem;
@@ -65,6 +52,89 @@ main    {
     border-radius: 2rem;
 }
 
+/* Sidebar */
+
+.sidebar_container  {
+    background-color: #000000;
+    padding: 1rem;
+    flex: 0 0 var(--width-sidebar);
+
+    z-index: 20;
+}
+
+.sidebar_container div  {
+    margin-bottom: 2rem;
+}
+
+/* Main buttons */
+
+.buttons_container  li  {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.test img   {
+    width: 2em;
+    margin-right: 0.25rem;
+    display: block;
+}
+
+.test span  {
+    font-size: 1.5rem;
+    display: block;
+}
+
+/* Make playlist */
+
+.make_playlist_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.make_playlist_container h1 {
+    color: white;
+    flex: 0 0 100%;
+}
+
+.make_playlist_container i  {
+    font-size: 4rem;
+    margin-right: 0.25rem;
+
+    display: block;
+}
+.make_playlist_container span   {
+    font-size: 1.5rem;
+
+    display: block;
+}
+
+/* Playlist */
+
+.playlist_container li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Songs container */
+
+.songs_container {
+    background-color: #141922;
+    padding-top: var(--height-top_banner);
+    height: calc(100vh - var(--height-playbar));
+
+    flex: 1 0 0;
+    overflow-y: auto;
+
+}
+
+/* Playbar */
 
 .playbar_container  {
     background-color: #282828;
