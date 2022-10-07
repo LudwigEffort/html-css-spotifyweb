@@ -269,6 +269,7 @@ main    {
 .miniature_container    {
     background-color: antiquewhite;
     padding: 1rem;
+    
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -277,6 +278,7 @@ main    {
 
 .miniature_img_container img {
     height: 100%;
+    width: 68px;
 }
 
 .miniature_img_container {
