@@ -238,13 +238,66 @@ main    {
 /* Songs container */
 
 .songs_container {
-    padding-top: var(--height-top_banner);
+    background-color: lightsalmon;
+    margin-top: var(--height-top_banner);
+    padding: 1rem;
     height: calc(100vh - var(--height-playbar));
+    
+    display: flex;
+    flex-direction: column;
 
     flex: 1 0 0;
     overflow-y: auto;
 
 }
+
+/* Songs container */
+
+.songs-type-container   {
+    background-color: cyan;
+    padding: 1rem;
+
+    flex: 1 1 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songs-type-container ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.songs-type-container a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Recently container */
+
+.recently-played-container  {
+    background-color: lightgreen;
+
+    flex: 1 1 30%;
+}
+
+.make-container {
+    background-color: crimson;
+
+    flex: 1 1 30%;
+}
+
+.popular-artists-container   {
+    background-color: hotpink;
+
+    flex: 1 1 30%;
+}
+
 
 
 /* Playbar */
