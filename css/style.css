@@ -280,6 +280,12 @@ main    {
 /* Common style */
 
 .cards-container {
+    --n-columns: 6;
+    --gaps: 1rem;
+    --basis: calc((100% - (var(--n-columns) - 1) * var(--gaps)) / var(--n-columns));
+}
+
+.cards-container {
     background-color: deepskyblue;
     margin-top: 1rem;
     padding: 1rem;
@@ -287,13 +293,43 @@ main    {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--gaps);
 }
 
 .card-container {
     background-color: crimson;
-    width: 200px;
-    height: 250px;
+    /* width: 200px; */
+    width: 100%;
+    /* height: 250px; */
+
+    flex: 0 1 var(--basis);
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (max-width: 878px)    {
+
+    .cards-container {
+        --n-columns: 4;
+    }
+
+}
+
+@media all and (max-width: 639px)    {
+
+    .cards-container {
+        --n-columns: 2;
+    }
+
+}
+
+@media all and (max-width: 552px)    {
+
+    .cards-container {
+        --n-columns: 2;
+    }
+
 }
 
 
