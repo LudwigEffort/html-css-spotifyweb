@@ -277,22 +277,53 @@ main    {
     font-size: 1.5rem;
 }
 
+/* Common style */
+
+.cards-container {
+    background-color: deepskyblue;
+    margin-top: 1rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-container {
+    background-color: crimson;
+    width: 200px;
+    height: 250px;
+}
+
+
 /* Recently container */
 
 .recently-played-container  {
     background-color: lightgreen;
+    padding: 1rem;
 
     flex: 1 1 30%;
 }
+
+/* Make to Ludwig */
 
 .make-container {
-    background-color: crimson;
+    background-color: yellow;
+    padding: 1rem;
 
     flex: 1 1 30%;
 }
+
+.make-container p   {
+    color: grey;
+}
+
+/* Popular artist */
 
 .popular-artists-container   {
     background-color: hotpink;
+    padding: 1rem;
 
     flex: 1 1 30%;
 }
