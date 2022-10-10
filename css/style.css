@@ -282,7 +282,6 @@ main    {
 .cards-container {
     --n-columns: 6;
     --gaps: 1rem;
-    /* --basis: calc((100% - (var(--n-columns) - 1) * var(--gaps)) / var(--n-columns)); */
 }
 
 .cards-container {
@@ -303,7 +302,6 @@ main    {
 .card-container {
     background-color: crimson;
 
-    /* flex: 0 1 var(--basis); */
     flex-wrap: 0;
     flex-shrink: 1;
     flex-basis: calc((100% - (var(--n-columns) - 1) * var(--gaps)) / var(--n-columns));
