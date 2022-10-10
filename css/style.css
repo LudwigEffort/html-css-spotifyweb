@@ -316,13 +316,13 @@ main    {
     width: 100%;
 }
 
-.card-img-container {
+/* .card-img-container {
     flex: 1 1 80%;
-}
+} */
 
-.card-text-container {
+/* .card-text-container {
     flex: 1 1 20%;
-}
+} */
 
 @media all and (max-width: 878px)    {
 
