@@ -279,10 +279,10 @@ main    {
 
 /* Common style */
 
-.cards-container {
+/* .cards-container {
     --n-columns: 6;
     --gaps: 1rem;
-}
+} */
 
 .cards-container {
     background-color: deepskyblue;
@@ -292,7 +292,8 @@ main    {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: var(--gaps);
+    /* gap: var(--gaps); */
+    gap: 1rem;
 }
 
 .songs_container h1 {
@@ -302,9 +303,10 @@ main    {
 .card-container {
     background-color: crimson;
 
-    flex-wrap: 0;
+    flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: calc((100% - (var(--n-columns) - 1) * var(--gaps)) / var(--n-columns));
+    /* flex-basis: calc((100% - (var(--n-columns) - 1) * var(--gaps)) / var(--n-columns)); */
+    flex-basis: calc((100%-(6 - 1) * 1rem) / 6 );
 
     display: flex;
     flex-direction: column;
