@@ -302,7 +302,7 @@ main    {
 
 .card-container {
     background-color: crimson;
-    
+
     flex: 0 1 var(--basis);
 
     display: flex;
@@ -406,7 +406,7 @@ main    {
 /* Left Controls */
 
 .left_controls_container {
-    /* width: 20%; */
+
     background-color: lightgrey;
     padding: 1rem;
 
@@ -423,14 +423,13 @@ main    {
     
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+
     gap: 1rem;
 }
 
 .miniature_img_container img{
     width: 100%;
     height: 100%;
-    /* object-fit: contain; */
 }
 
 .miniature_img_container    {
@@ -459,7 +458,7 @@ main    {
 /* Center Controls */
 
 .center_controls_container {
-    /* width: 60%; */
+
     background-color: lightcyan;
 
     flex: 0 1 40%;
@@ -536,7 +535,6 @@ main    {
 /* Right controls */
 
 .right_controls_container {
-    /* width: 20%; */
     background-color: lightpink;
     padding: 1rem;
 
